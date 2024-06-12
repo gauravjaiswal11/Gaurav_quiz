@@ -1,67 +1,67 @@
 let myname=prompt("Enter Your Name?");
 let messwelcome=document.querySelector('#welcome');
-messwelcome.innerHTML=`Welcome ${myname}🥰! Lets test Your Knowledge About Our lovestory `
+messwelcome.innerHTML=`Welcome ${myname}🥰! Lets test Your Knowledge About Java `
 
 
 const questions = [
   {
-    question: "When did ADI met RADHU❤️?",
+    question: "What is the purpose of the `main` method in Java?",
     answers: [
-      { text: "2023", correct: false },
-      { text: "2022", correct: true },
-      { text: "2021", correct: false },
-      { text: "They did Never meet😁", correct: false },
+      { text: "To execute the program", correct: true },
+      { text: "To define a variable", correct: false },
+      { text: "To create a class", correct: false },
+      { text: "To print data", correct: false },
     ],
   },
 
   {
-    question: "By which name is RADHU most commonly called by ADI?",
+    question: "Which keyword is used to inherit a class in Java?",
     answers: [
-      { text: "Motki👧", correct: true },
-      { text: "Bauaa🍼", correct: false },
-      { text: "Meri Pagaliya Girlfriend🥰", correct: false },
-      { text: "Radhika Rani G❤️", correct: false },
-      
+      { text: "inherits", correct: false },
+      { text: "extends", correct: true },
+      { text: "implements", correct: false },
+      { text: "derives", correct: false },
     ],
   },
 
   {
-    question: "From which city do Adi belongs?",
+    question: "What is the size of an `int` variable in Java?",
     answers: [
-      { text: "Jammu", correct: false },
-      { text: "Patna", correct: true },
-      { text: "Delhi", correct: false },
-      { text: "Mumbai", correct: false },
+      { text: "4 bytes", correct: true },
+      { text: "2 bytes", correct: false },
+      { text: "8 bytes", correct: false },
+      { text: "1 byte", correct: false },
     ],
   },
   {
-    question: "The honeymoon place as per planned of ADI & RADHU?",
+    question: "Which of the following is not a Java feature?",
     answers: [
-      { text: "Singapore", correct: true },
-      { text: "New york", correct: false },
-      { text: "Wellington", correct: false },
-      { text: "Islambad😂", correct: false },
+      { text: "Object-oriented", correct: false },
+      { text: "Use of pointers", correct: true },
+      { text: "Platform-independent", correct: false },
+      { text: "Portable", correct: false },
     ],
   },
   {
-    question: "How many times did Adi Kissed RAdHU ?",
+    question: "Which method must be implemented by all threads?",
     answers: [
-      { text: "<=300", correct: false },
-      { text: "<=500", correct: false },
-      { text: "<=1000", correct: false },
-      { text: "<=1200", correct: true },
+      { text: "wait()", correct: false },
+      { text: "start()", correct: false },
+      { text: "run()", correct: true },
+      { text: "stop()", correct: false },
     ],
   },
   {
-    question: "What hurts more you from your ADI?",
+    question: "Which of these is a valid keyword in Java?",
     answers: [
-      { text: "Attitude", correct: false },
-      { text: "Ego", correct: true },
-      { text: "His Lust😘", correct: false },
-      { text: "His Busy Schedule", correct: false },
+      { text: "interface", correct: true },
+      { text: "string", correct: false },
+      { text: "Float", correct: false },
+      { text: "unsigned", correct: false },
     ],
   },
 ];
+
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
